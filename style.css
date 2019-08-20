@@ -1,0 +1,141 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #949393;
+}
+
+.pimg0,
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4,
+.pimg5,
+.pimg6,
+.pimg7,
+.pimg8 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /*
+    background-attached: fixed; = parallax
+    background-attached: scroll; = normal
+  */
+  background-attachment: fixed;
+}
+
+.pimg0 {
+  background-image: url("img/forest.JPG");
+  min-height: 100%;
+  background-position-y: 25%;
+}
+
+.pimg1 {
+  background-image: url("img/castle.JPG");
+  min-height: 100%;
+  background-position-y: 25%;
+}
+
+.pimg2 {
+  background-image: url("img/shrine.JPG");
+  min-height: 100%;
+  background-position-y: 5%;
+}
+
+.pimg3 {
+  background-image: url("img/hiroshima.JPG");
+  min-height: 100%;
+  background-position-y: 5%;
+}
+
+.pimg4 {
+  background-image: url("img/monkey.JPG");
+  min-height: 100%;
+  background-position-y: 30%;
+}
+
+.pimg5 {
+  background-image: url("img/osaka.JPG");
+  min-height: 100%;
+  background-position-y: 80%;
+}
+
+.pimg6 {
+  background-image: url("img/gates.JPG");
+  min-height: 100%;
+  background-position-y: 89%;
+}
+
+.pimg7 {
+  background-image: url("img/kobeport.JPG");
+  min-height: 100%;
+  background-position-y: 87%;
+}
+
+.pimg8 {
+  background-image: url("img/crossing.JPG");
+  min-height: 100%;
+  background-position-y: 15%;
+  opacity: 1;
+}
+
+.section {
+  text-align: center;
+  padding: 30px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #949393;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  font-size: 27px;
+  letter-spacing: 8px;
+}
+
+.ptext .border {
+  background-color: #111;
+  color: #ffffff;
+  padding: 17px;
+}
+
+.ptext .trans {
+  background-color: transparent;
+}
+
+.section a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+@media (max-width: 568px) {
+  .pimg0,
+  .pimg1,
+  .pimg2,
+  .pimg3,
+  .pimg4,
+  .pimg5,
+  .pimg6,
+  .pimg7,
+  .pimg8 {
+    background-attachment: scroll;
+  }
+}
